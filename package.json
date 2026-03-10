@@ -1,0 +1,12 @@
+{
+  "name": "westeros-rpg",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["frontend", "backend", "discord-bot"],
+  "scripts": {
+    "dev:backend": "cd backend && node --watch server.js",
+    "dev:frontend": "cd frontend && npx vite",
+    "dev:bot": "cd discord-bot && node --watch index.js",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install && cd ../discord-bot && npm install"
+  }
+}
